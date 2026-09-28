@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="te" data-root="./" data-page="notfound">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Geethanjali Digital World</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // GitHub Pages shows this page for any missing address, at any depth.
+    // Point relative links back at the site root (works for username.github.io/repo/ and custom domains).
+    (function () {
+      var seg = location.pathname.split('/').filter(Boolean);
+      var base = /\.github\.io$/i.test(location.hostname) && seg.length ? '/' + seg[0] + '/' : '/';
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <link rel="icon" href="assets/images/brand/favicon-32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="content.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script>
+    window.GDW && GDW.page(function () {
+      var ui = GDW.C.ui || {};
+      document.title = '404 — ' + GDW.plain(GDW.C.settings.siteName);
+      document.getElementById('main').innerHTML =
+        '<section class="section not-found"><div class="container"><p class="big">404</p>' +
+        '<h1 class="title">' + GDW.tx(ui.notFoundTitle) + '</h1><p class="lead">' + GDW.tx(ui.notFoundText) + '</p>' +
+        '<div class="btn-row" style="justify-content:center"><a class="btn btn-primary" href="./">' + GDW.tx(ui.goHome) + '</a></div></div></section>';
+    });
+  </script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <main id="main" tabindex="-1"></main>
+  <footer id="site-footer"></footer>
+</body>
+</html>
