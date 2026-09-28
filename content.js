@@ -16,7 +16,7 @@ window.SITE_CONTENT = {
   // ── META — managed automatically by the admin panel
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-09-27T20:15:15"
+    "lastUpdated": "2026-09-28T13:57:42"
   },
 
   // ── SITE SETTINGS — name, logo, default language/theme, fonts, analytics, publishing
@@ -37,8 +37,8 @@ window.SITE_CONTENT = {
     "teluguFont": "Noto Serif Telugu",
     "goatcounterCode": "",
     "github": {
-      "owner": "",
-      "repo": "",
+      "owner": "geethaavg-arch",
+      "repo": "geethanjali-digital-world",
       "branch": "main"
     },
     "adminPasscode": {
