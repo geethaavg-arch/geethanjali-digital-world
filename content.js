@@ -16,7 +16,7 @@ window.SITE_CONTENT = {
   // ── META — managed automatically by the admin panel
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-09-28T13:57:42"
+    "lastUpdated": "2026-09-29T11:17:21"
   },
 
   // ── SITE SETTINGS — name, logo, default language/theme, fonts, analytics, publishing
@@ -342,6 +342,13 @@ window.SITE_CONTENT = {
           "alt": {
             "te": "మీ బ్రాండ్ ఎదుగుదల — గీతాంజలి డిజిటల్ వరల్డ్ బ్యానర్",
             "en": "We help your brand grow — Geethanjali Digital World banner"
+          }
+        },
+        {
+          "src": "assets/images/uploads/geethanjali-digital-world-mumkauxq.jpg",
+          "alt": {
+            "te": "",
+            "en": "A sleek office setup with a desktop monitor and Laptop neatly arranged on a work table ,symbolising modern web design and digital agency solutions."
           }
         }
       ]
