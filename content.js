@@ -16,7 +16,7 @@ window.SITE_CONTENT = {
   // ── META — managed automatically by the admin panel
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-09-29T11:17:21"
+    "lastUpdated": "2026-09-29T11:32:54"
   },
 
   // ── SITE SETTINGS — name, logo, default language/theme, fonts, analytics, publishing
@@ -347,8 +347,15 @@ window.SITE_CONTENT = {
         {
           "src": "assets/images/uploads/geethanjali-digital-world-mumkauxq.jpg",
           "alt": {
-            "te": "",
+            "te": "వర్క్ టేబుల్ పై చక్కగా అమర్చబడిన కంప్యూటర్ డెస్క్‌టాప్ మరియు ల్యాప్‌టాప్; వెబ్‌సైట్ డిజైనింగ్ మరియు డిజిటల్ సొల్యూషన్స్ వర్క్‌స్పేస్ దృశ్యం.\"",
             "en": "A sleek office setup with a desktop monitor and Laptop neatly arranged on a work table ,symbolising modern web design and digital agency solutions."
+          }
+        },
+        {
+          "src": "",
+          "alt": {
+            "te": "",
+            "en": ""
           }
         }
       ]
