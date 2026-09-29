@@ -16,7 +16,7 @@ window.SITE_CONTENT = {
   // ── META — managed automatically by the admin panel
   "meta": {
     "version": 1,
-    "lastUpdated": "2026-09-29T11:32:54"
+    "lastUpdated": "2026-09-29T11:44:37"
   },
 
   // ── SITE SETTINGS — name, logo, default language/theme, fonts, analytics, publishing
@@ -84,19 +84,19 @@ window.SITE_CONTENT = {
   // ── SOCIAL LINKS — leave url empty to hide a link
   "social": [
     {
-      "name": "Instagram",
+      "name": "ayyapaneni1963",
       "icon": "instagram",
-      "url": ""
+      "url": "https://www.instagram.com/ayyapaneni1963?stkn=MWlhbWRocHMzMDk4eg%3D%3D&utm_source=qr"
     },
     {
-      "name": "Facebook",
+      "name": "Anjali Geetha",
       "icon": "facebook",
-      "url": ""
+      "url": "https://www.facebook.com/share/1JM9kyr5o3/?mibextid=wwXIfr"
     },
     {
-      "name": "YouTube",
+      "name": "Geethanjali Digital World",
       "icon": "youtube",
-      "url": ""
+      "url": "https://www.youtube.com/@geethanjaliayappaneni2183"
     }
   ],
 
