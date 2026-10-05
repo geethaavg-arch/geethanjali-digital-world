@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="te">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Demo tea shop website from the Geethanjali Digital World portfolio.
+       A standalone page: it does not use content.js or the main site's CSS/JS.
+       script.js updates the shop details below if the owner saved new ones. -->
+  <title>మన టీ With బిస్కెట్ - Venkatagiri Best Tea Shop</title>
+  <meta name="description" content="మన టీ With బిస్కెట్ - Venkatagiri lo best tea shop. Masala tea, coffee, biscuit, samosa. Timings ఉదయం 6:00 - రాత్రి 9:00 వరకు (సోమ - ఆది). Call cheyandi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="మన టీ With బిస్కెట్ - Venkatagiri Best Tea Shop">
+  <meta property="og:description" content="మన టీ With బిస్కెట్ - Venkatagiri lo best tea shop. Masala tea, coffee, biscuit, samosa.">
+  <meta property="og:image" content="../../assets/images/portfolio/tea-biscuit-site-thumb.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json" id="shop-ld">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"మన టీ With బిస్కెట్","description":"Venkatagiri lo best tea shop. Masala tea, coffee, biscuit, samosa. Timings ఉదయం 6:00 - రాత్రి 9:00 వరకు (సోమ - ఆది)","address":{"@type":"PostalAddress","streetAddress":"Venkatagiri Bus Stand, Main Road","addressLocality":"Venkatagiri","addressRegion":"Andhra Pradesh","addressCountry":"IN"},"telephone":"+919876543210","openingHours":"Mo-Su 06:00-21:00","servesCuisine":["Tea","Coffee","Snacks"],"priceRange":"₹"}</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- OWNER ACCESS — edit panel; changes are saved only in this browser -->
+  <div class="owner-edit-root">
+    <div class="owner-bar">
+      <div class="wrap owner-bar-inner">
+        <span class="owner-label">Owner Access: మీ షాప్ వివరాలు మార్చుకోండి</span>
+        <button class="owner-toggle" type="button" aria-expanded="false" aria-controls="owner-panel">⚙️ Shop Details Edit</button>
+      </div>
+    </div>
+    <div class="owner-panel" id="owner-panel" hidden>
+      <div class="wrap owner-panel-inner">
+        <h3>షాప్ వివరాలు సవరించండి</h3>
+        <p class="sub">ఇక్కడ మార్చిన వివరాలు వెంటనే సైట్‌లో కనిపిస్తాయి. ఇవి మీ బ్రౌజర్‌లో save అవుతాయి (localStorage). మీ లొకేషన్ లింక్ Google Maps నుండి copy చేసి ఇక్కడ paste చేయండి.</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-shopName">Shop Name</label>
+            <input id="f-shopName" data-field="shopName" placeholder="మన టీ With బిస్కెట్">
+          </div>
+          <div class="field">
+            <label for="f-timings">Timings / సమయం</label>
+            <input id="f-timings" data-field="timings" placeholder="ఉదయం 6:00 - రాత్రి 9:00 వరకు">
+          </div>
+          <div class="field">
+            <label for="f-phoneDisplay">Phone Number (కాల్)</label>
+            <input id="f-phoneDisplay" data-field="phoneDisplay" placeholder="+91 98765 43210" inputmode="tel">
+          </div>
+          <div class="field">
+            <label for="f-waDisplay">WhatsApp Number</label>
+            <input id="f-waDisplay" data-field="waDisplay" placeholder="+91 98765 43210" inputmode="tel">
+          </div>
+          <div class="field full">
+            <label for="f-address">Address / Location Text</label>
+            <textarea id="f-address" data-field="address" placeholder="Venkatagiri Bus Stand, Main Road"></textarea>
+          </div>
+          <div class="field full">
+            <label for="f-mapSrc">Google Maps Embed Link (iframe src)</label>
+            <textarea id="f-mapSrc" data-field="mapSrc" placeholder="https://www.google.com/maps?q=Venkatagiri&amp;z=15&amp;output=embed" style="min-height:86px"></textarea>
+          </div>
+        </div>
+        <div class="panel-actions">
+          <button class="btn-save" type="button">💾 Save &amp; Update Site</button>
+          <button class="btn-cancel" type="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="saved-toast" role="status" hidden>✓ Details saved! Google kosam ready.</div>
+
+  <header>
+    <div class="wrap header-inner">
+      <div class="brand" data-shop="shopName">మన టీ With బిస్కెట్</div>
+      <span class="badge">డెమో టీ షాప్</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="shop-name">
+      <div>
+        <p class="eyebrow">ఒక కప్పు టీ… కాసేపు కబుర్లు!</p>
+        <h1 id="shop-name">మన టీ<br><span>With బిస్కెట్</span></h1>
+        <p class="tagline">ఆ రుచే వేరు</p>
+        <p class="intro">వెచ్చని టీ, కరకరలాడే బిస్కెట్.<br>మీ చిన్న విరామానికి చక్కని జోడి.</p>
+        <a class="button" href="#menu">మెనూ చూడండి <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="art">
+        <svg viewBox="0 0 440 350" role="img" aria-labelledby="tea-title">
+          <title id="tea-title">వెచ్చని టీ కప్పు, పక్కన రెండు బిస్కెట్లు</title>
+          <circle cx="220" cy="166" r="131" fill="#edc881"/>
+          <g fill="none" stroke="#fff8e9" stroke-width="9" stroke-linecap="round">
+            <path d="M173 108 C151 81 195 64 175 35"/>
+            <path d="M218 99 C195 72 239 54 220 24"/>
+            <path d="M262 109 C241 84 281 65 264 40"/>
+          </g>
+          <ellipse cx="218" cy="288" rx="153" ry="22" fill="#cba465" opacity=".4"/>
+          <ellipse cx="206" cy="268" rx="127" ry="23" fill="#fff8e9"/>
+          <path d="M290 156 C365 138 366 239 289 229" fill="none" stroke="#254b39" stroke-width="22"/>
+          <path d="M111 147 L128 232 Q137 268 204 268 Q270 268 282 232 L298 147Z" fill="#254b39"/>
+          <ellipse cx="204" cy="147" rx="94" ry="25" fill="#fff8e9"/>
+          <ellipse cx="204" cy="150" rx="81" ry="17" fill="#a86635"/>
+          <path d="M143 182 L150 220" stroke="#6f9070" stroke-width="8" stroke-linecap="round"/>
+          <g transform="translate(303 267) rotate(-17)">
+            <rect x="-5" y="-30" width="87" height="61" rx="13" fill="#bc792e" stroke="#91521f" stroke-width="3"/>
+            <rect x="-15" y="-42" width="87" height="61" rx="13" fill="#e4ad57" stroke="#91521f" stroke-width="3"/>
+            <path d="M0 -28 H57 M0 4 H57" stroke="#bf8136" stroke-width="3" stroke-dasharray="4 5"/>
+            <g fill="#91521f">
+              <circle cx="6" cy="-12" r="3"/>
+              <circle cx="27" cy="-12" r="3"/>
+              <circle cx="48" cy="-12" r="3"/>
+            </g>
+          </g>
+        </svg>
+        <p class="art-note">చిన్న విరామం. చక్కని రుచి.</p>
+      </div>
+    </section>
+
+    <!-- CALL / WHATSAPP -->
+    <section class="contact-bar" aria-label="Contact actions">
+      <div class="contact-bar-grid">
+        <a href="tel:+919876543210" class="button call-btn" data-link="tel">📞 కాల్ చేయండి</a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="button wa-btn" style="background:#25D366" data-link="wa">WhatsApp లో ఆర్డర్</a>
+      </div>
+    </section>
+
+    <!-- SHOP DETAILS -->
+    <section id="info" class="info-section" aria-labelledby="info-title">
+      <div class="section-heading">
+        <h2 id="info-title">షాప్ వివరాలు</h2>
+        <p>సులభంగా మమ్మల్ని కలవండి</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-card-top"><span class="icon" aria-hidden="true">🕒</span><h3>సమయం</h3></div>
+          <div class="value" data-shop="timings">ఉదయం 6:00 - రాత్రి 9:00 వరకు (సోమ - ఆది)</div>
+          <div class="subvalue">ప్రతి రోజూ తెరిచి ఉంటుంది. పండుగ రోజుల్లో సమయం మారవచ్చు.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top"><span class="icon" aria-hidden="true">📍</span><h3>లొకేషన్</h3></div>
+          <div class="value" data-shop="address">Venkatagiri Bus Stand, Main Road</div>
+          <div class="subvalue">Venkatagiri Bus Stand daggara. Google Maps lo direction teesukondi.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-top"><span class="icon" aria-hidden="true">📞</span><h3>సంప్రదించండి</h3></div>
+          <div class="value" data-shop="phoneDisplay">+91 98765 43210</div>
+          <div class="subvalue">WhatsApp: <span data-shop="waDisplay">+91 98765 43210</span> - Order ki message cheyandi.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu-section" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <h2 id="menu-title">మన మెనూ</h2>
+        <p>మీకు నచ్చిన రుచి, ఇక్కడే.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card"><span class="icon" aria-hidden="true">☕</span><h3>మసాలా టీ</h3><span class="price">₹20</span></article>
+        <article class="menu-card"><span class="icon" aria-hidden="true">☕</span><h3>కాఫీ</h3><span class="price">₹30</span></article>
+        <article class="menu-card"><span class="icon" aria-hidden="true">🍪</span><h3>బిస్కెట్</h3><span class="price">₹10</span></article>
+        <article class="menu-card"><span class="icon" aria-hidden="true">△</span><h3>సమోసా</h3><span class="price">₹15</span></article>
+      </div>
+      <p class="demo-note">ఇవి డెమో ధరలు మాత్రమే.</p>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="location-section" aria-labelledby="location-title">
+      <div class="section-heading">
+        <h2 id="location-title">మమ్మల్ని ఇక్కడ కలవండి</h2>
+        <p>Maps lo chudandi</p>
+      </div>
+      <div class="location-grid">
+        <div>
+          <div class="map-wrap">
+            <iframe title="Shop Location Map" src="https://www.google.com/maps?q=Venkatagiri&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-shop-map></iframe>
+          </div>
+          <div class="map-note">మీ షాప్ లొకేషన్ లింక్ ఇక్కడ పెట్టండి — పైన ⚙️ Edit lo Google Maps embed link paste cheyandi. Google Maps &gt; Share &gt; Embed a map &gt; Copy HTML &gt; src link teesukondi.</div>
+        </div>
+        <div class="location-details">
+          <h3 data-shop="shopName">మన టీ With బిస్కెట్</h3>
+          <p data-shop="address">Venkatagiri Bus Stand, Main Road</p>
+          <div class="mini">
+            <div class="mini-item"><span>🕒</span><span data-shop="timings">ఉదయం 6:00 - రాత్రి 9:00 వరకు (సోమ - ఆది)</span></div>
+            <div class="mini-item"><span>📞</span><span><a href="tel:+919876543210" data-link="tel" data-shop="phoneDisplay">+91 98765 43210</a></span></div>
+            <div class="mini-item"><span>💬</span><span><a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" data-link="wa" data-shop="waDisplay" data-prefix="WhatsApp ">WhatsApp +91 98765 43210</a></span></div>
+          </div>
+          <div style="margin-top:18px;display:grid;gap:10px">
+            <a href="tel:+919876543210" class="button" style="font-size:17px" data-link="tel">📞 ఇప్పుడు కాల్ చేయండి</a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="button wa-btn" style="font-size:17px;background:#25D366" data-link="wa">WhatsApp Direction Adagandi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><span data-shop="shopName">మన టీ With బిస్కెట్</span> · కబుర్లకు తోడుగా ఒక కప్పు టీ.</p>
+      <p class="foot-small">Google lo 'mana tea shop Venkatagiri' ani search cheyandi · <span data-shop="address">Venkatagiri Bus Stand, Main Road</span> · <span data-shop="timings">ఉదయం 6:00 - రాత్రి 9:00 వరకు (సోమ - ఆది)</span></p>
+    </div>
+  </footer>
+</body>
+</html>

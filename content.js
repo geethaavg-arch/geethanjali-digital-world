@@ -533,7 +533,7 @@ window.SITE_CONTENT = {
         "te": "వివిధ రంగాల క్లయింట్ల కోసం మేము రూపొందించిన కొన్ని ప్రాజెక్ట్‌లు చూడండి. ప్రతి ప్రాజెక్ట్ సృజనాత్మకత మరియు సాంకేతిక నైపుణ్యంతో నిండి ఉంటుంది.",
         "en": "Here are a few projects we've created for clients in different fields. Every one is full of creativity and technical skill."
       },
-      "maxItems": 3,
+      "maxItems": 6,
       "button": {
         "label": {
           "te": "మొత్తం పోర్ట్‌ఫోలియో చూడండి",
@@ -1147,6 +1147,54 @@ window.SITE_CONTENT = {
       }
     ],
     "projects": [
+      {
+        "id": "tea-biscuit-website",
+        "show": true,
+        "featured": true,
+        "category": "web",
+        "title": {
+          "te": "మన టీ With బిస్కెట్ — టీ షాప్ వెబ్‌సైట్",
+          "en": "Mana Tea With Biscuit — Tea Shop Website"
+        },
+        "client": {
+          "te": "డెమో ప్రాజెక్ట్ (నమూనా టీ షాప్)",
+          "en": "Demo project (sample tea shop)"
+        },
+        "date": "2026-10",
+        "summary": {
+          "te": "చిన్న టీ షాప్ కోసం ఒక పేజీ వెబ్‌సైట్ — కాల్, WhatsApp ఆర్డర్, మెనూ, మ్యాప్ ☕",
+          "en": "A one-page website for a small tea shop — call, WhatsApp orders, menu and map ☕"
+        },
+        "description": {
+          "te": "చిన్న టీ షాప్ కోసం రూపొందించిన ఒక పేజీ వెబ్‌సైట్. పెద్ద అక్షరాలు, సులభమైన తెలుగు, ఫోన్‌లో చక్కగా కనిపించే డిజైన్.\n\n- ఒక్క టచ్‌తో కాల్ మరియు WhatsApp ఆర్డర్ బటన్లు\n- ధరలతో మెనూ\n- సమయం, చిరునామా మరియు Google Maps లొకేషన్\n- పేజీ పైన \"Owner Access\" తో షాప్ పేరు, సమయం, ఫోన్, చిరునామా, మ్యాప్ లింక్ మార్చుకోవచ్చు (ఈ డెమోలో మార్పులు మీ బ్రౌజర్‌లో మాత్రమే సేవ్ అవుతాయి)\n- Google సెర్చ్‌కు తగ్గట్టు షాప్ వివరాలు\n\nఇది డెమో వెబ్‌సైట్ — ఫోన్ నంబర్ మరియు ధరలు నమూనా మాత్రమే.",
+          "en": "A one-page website for a small tea shop. Large text, simple Telugu and a layout made for phones.\n\n- One-tap Call and WhatsApp order buttons\n- Menu with prices\n- Opening hours, address and a Google Maps location\n- An \"Owner Access\" panel at the top to change the shop name, hours, phone, address and map link (in this demo, changes are saved only in your own browser)\n- Shop details set up for Google search\n\nThis is a demo website: the phone number and prices are samples."
+        },
+        "cover": "assets/images/portfolio/tea-biscuit-site-thumb.jpg",
+        "images": [
+          {
+            "src": "assets/images/portfolio/tea-biscuit-site.jpg",
+            "caption": {
+              "te": "కంప్యూటర్‌లో మొదటి పేజీ",
+              "en": "The first screen on a computer"
+            }
+          },
+          {
+            "src": "assets/images/portfolio/tea-biscuit-phone.jpg",
+            "caption": {
+              "te": "ఫోన్‌లో ఇలా కనిపిస్తుంది",
+              "en": "How it looks on a phone"
+            }
+          },
+          {
+            "src": "assets/images/portfolio/tea-biscuit-location.jpg",
+            "caption": {
+              "te": "Google Maps లొకేషన్ మరియు కాల్ / WhatsApp బటన్లు",
+              "en": "Google Maps location with Call and WhatsApp buttons"
+            }
+          }
+        ],
+        "link": "portfolio/tea-biscuit/"
+      },
       {
         "id": "poleramma-jatara-logo",
         "show": true,

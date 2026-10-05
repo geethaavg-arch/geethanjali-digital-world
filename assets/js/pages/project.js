@@ -34,7 +34,7 @@
       (G.t(p.client) ? '<dt>' + G.tx(ui.client) + '</dt><dd>' + G.tx(p.client) + '</dd>' : '') +
       (cat ? '<dt>' + G.tx(ui.category) + '</dt><dd>' + G.tx(cat.label) + '</dd>' : '') +
       (p.date ? '<dt>' + G.tx(ui.date) + '</dt><dd>' + G.esc(G.formatDate(p.date)) + '</dd>' : '') +
-      '</dl>' + (p.link ? '<div class="btn-row"><a class="btn btn-outline" href="' + G.esc(p.link) + '" target="_blank" rel="noopener">' + G.tx(ui.visitSite) + G.icon('external') + '</a></div>' : '') + '</div>';
+      '</dl>' + (p.link ? '<div class="btn-row"><a class="btn btn-outline" href="' + G.esc(G.href(p.link)) + '" target="_blank" rel="noopener">' + G.tx(ui.visitSite) + G.icon('external') + '</a></div>' : '') + '</div>';
 
     var prev = list[idx - 1], next = list[idx + 1];
     var pn = '<nav class="prev-next">' +
